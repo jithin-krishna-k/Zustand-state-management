@@ -57,11 +57,12 @@ Open http://localhost:3000 in your browser to view the application.
 - **/src/components/UserDetails.tsx**: User details component with dynamic data fetching.
 
 ## Usage
-Counter: Click the increment and decrement buttons to update the counter state.
-User Details: Enter a user ID and click "Fetch User" to fetch and display user details from the API.
+- **Counter**: Click the increment and decrement buttons to update the counter state.
+- **User Details**: Enter a user ID and click "Fetch User" to fetch and display user details from the API.
 
 ## Example Usage
 
+bash
 import { create } from 'zustand';
 
 interface CounterState {

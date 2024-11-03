@@ -60,7 +60,7 @@ Open http://localhost:3000 in your browser to view the application.
 - **Counter**: Click the increment and decrement buttons to update the counter state.
 - **User Details**: Enter a user ID and click "Fetch User" to fetch and display user details from the API.
 
-## Example Usage
+## Example Usage For Counter
 
    ```bash
 import { create } from 'zustand';

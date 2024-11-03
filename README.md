@@ -38,12 +38,10 @@ This application provides examples of:
    cd Zustand-state-management
 
 
-## Install dependencies:
-
+## Install dependencies
 ```bash
 npm install
 npm run dev
-Start the development server:
 
 
 ## Project Structure

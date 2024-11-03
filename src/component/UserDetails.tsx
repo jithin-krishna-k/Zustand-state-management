@@ -1,10 +1,20 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { userDetails } from "../store/userDetailsStore";
 
 
 const UserDetails = () => {
-    const { user, loading, error, fetchUser } = userDetails();
+    const { user, loading, error, fetchUser, loadUserFromLocalStorage } = userDetails();
     const [userId, setUserId] = useState<string>('');
+
+    useEffect(() => {
+        loadUserFromLocalStorage();
+    }, [loadUserFromLocalStorage]);
+
+    useEffect(() => {
+        if (user) {
+            setUserId(String(user.id));
+        }
+    }, [user]);
 
     const handleFetchUser = () => {
         const id = Number(userId);

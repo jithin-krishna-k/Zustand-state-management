@@ -7,10 +7,11 @@ interface User {
 }
 
 interface UserStore {
-    user: User | null; 
+    user: User | null;
     loading: boolean;
     error: string;
     fetchUser: (id: number) => Promise<void>;
+    loadUserFromLocalStorage: () => void;
 }
 
 export const userDetails = create<UserStore>((set) => ({
@@ -26,8 +27,16 @@ export const userDetails = create<UserStore>((set) => ({
             }
             const userData: User = await response.json();
             set({ user: userData, loading: false });
+            localStorage.setItem('user', JSON.stringify(userData));
         } catch (error) {
             set({ error: String(error), loading: false });
         }
     },
+    loadUserFromLocalStorage: () => {
+        set({ loading: true, error: '' });
+        const savedUser = localStorage.getItem('user');
+        if (savedUser) {
+            set({ user: JSON.parse(savedUser), loading: false });
+        }
+    }
 }));

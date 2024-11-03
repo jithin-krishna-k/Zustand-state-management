@@ -1,7 +1,7 @@
 import useCounterStore from "../store/store";
 
 const Counter = () => {
-    const { count, incrementCounter, decrementCounter } = useCounterStore();
+    const { count, incrementCounter, decrementCounter, resetCounter } = useCounterStore();
 
     return (
         <div className="bg-white shadow-lg rounded-sm p-4">
@@ -12,6 +12,11 @@ const Counter = () => {
                 </button>
                 <button onClick={decrementCounter} className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600">
                     Decrement
+                </button>
+            </div>
+            <div className="mt-1">
+                <button onClick={resetCounter} className="px-4 py-2 bg-slate-700  text-white rounded">
+                    Reset
                 </button>
             </div>
         </div>

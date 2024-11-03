@@ -42,11 +42,9 @@ This application provides examples of:
 
 ```bash
 npm install
+npm run dev
 Start the development server:
 
-```bash
-npm run dev
-Open http://localhost:3000 in your browser to view the application.
 
 ## Project Structure
 - **/src/store/userdetailsStore.ts**: Contains the Zustand store for managing user state and fetching user data.

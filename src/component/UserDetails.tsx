@@ -1,5 +1,6 @@
 import { useState } from "react";
-import { userDetails } from "../store/userdetailsStore";
+import { userDetails } from "../store/userDetailsStore";
+
 
 const UserDetails = () => {
     const { user, loading, error, fetchUser } = userDetails();

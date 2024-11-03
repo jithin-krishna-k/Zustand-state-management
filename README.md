@@ -51,10 +51,10 @@ npm run dev
 Open http://localhost:3000 in your browser to view the application.
 
 ## Project Structure
-/src/store/userdetailsStore.ts: Contains the Zustand store for managing user state and fetching user data.
-/src/store/counterStore.ts: Contains the Zustand store for managing the counter state.
-/src/components/Counter.tsx: Counter component using Zustand for state management.
-/src/components/UserDetails.tsx: User details component with dynamic data fetching.
+- **/src/store/userdetailsStore.ts**: Contains the Zustand store for managing user state and fetching user data.
+- **/src/store/counterStore.ts**: Contains the Zustand store for managing the counter state.
+- **/src/components/Counter.tsx**: Counter component using Zustand for state management.
+- **/src/components/UserDetails.tsx**: User details component with dynamic data fetching.
 
 ## Usage
 Counter: Click the increment and decrement buttons to update the counter state.

@@ -38,7 +38,7 @@ This application provides examples of:
    cd Zustand-state-management
 
 
-Install dependencies:
+## Install dependencies:
 
 bash
 Copy code
@@ -50,17 +50,17 @@ Copy code
 npm run dev
 Open http://localhost:3000 in your browser to view the application.
 
-Project Structure
+## Project Structure
 /src/store/userdetailsStore.ts: Contains the Zustand store for managing user state and fetching user data.
 /src/store/counterStore.ts: Contains the Zustand store for managing the counter state.
 /src/components/Counter.tsx: Counter component using Zustand for state management.
 /src/components/UserDetails.tsx: User details component with dynamic data fetching.
 
-Usage
+## Usage
 Counter: Click the increment and decrement buttons to update the counter state.
 User Details: Enter a user ID and click "Fetch User" to fetch and display user details from the API.
 
-Example Usage
+## Example Usage
 
 import { create } from 'zustand';
 

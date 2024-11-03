@@ -39,10 +39,9 @@ This application provides examples of:
 
 
 ## Install dependencies
-```bash
-npm install
-npm run dev
-
+   ```bash
+   npm install
+   npm run dev
 
 ## Project Structure
 - **/src/store/userdetailsStore.ts**: Contains the Zustand store for managing user state and fetching user data.

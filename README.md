@@ -62,7 +62,7 @@ Open http://localhost:3000 in your browser to view the application.
 
 ## Example Usage
 
-bash
+Copy code
 import { create } from 'zustand';
 
 interface CounterState {

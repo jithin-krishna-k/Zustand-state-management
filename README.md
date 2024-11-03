@@ -40,13 +40,11 @@ This application provides examples of:
 
 ## Install dependencies:
 
-bash
-Copy code
+```bash
 npm install
 Start the development server:
 
-bash
-Copy code
+```bash
 npm run dev
 Open http://localhost:3000 in your browser to view the application.
 

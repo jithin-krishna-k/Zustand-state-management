@@ -39,8 +39,8 @@ This application provides examples of:
 
 
 ## Install dependencies
-- npm install : # Install project dependencies
-- npm run dev : # Start the development server
+- npm install : Install project dependencies
+- npm run dev : Start the development server
 
 ## Project Structure
 - **/src/store/userdetailsStore.ts**: Contains the Zustand store for managing user state and fetching user data.

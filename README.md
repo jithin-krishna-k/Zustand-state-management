@@ -61,7 +61,6 @@ Counter: Click the increment and decrement buttons to update the counter state.
 User Details: Enter a user ID and click "Fetch User" to fetch and display user details from the API.
 
 Example Usage
-// Example of using Zustand to create a store
 import { create } from 'zustand';
 
 interface CounterState {

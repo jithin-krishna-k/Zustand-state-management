@@ -38,17 +38,9 @@ This application provides examples of:
    cd Zustand-state-management
 
 
-## Install dependencies:
-
-bash
-Copy code
-npm install
-Start the development server:
-
-bash
-Copy code
-npm run dev
-Open http://localhost:3000 in your browser to view the application.
+## Install dependencies
+- npm install : Install project dependencies
+- npm run dev : Start the development server
 
 ## Project Structure
 - **/src/store/userdetailsStore.ts**: Contains the Zustand store for managing user state and fetching user data.

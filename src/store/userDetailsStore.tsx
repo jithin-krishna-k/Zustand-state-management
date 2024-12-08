@@ -9,7 +9,7 @@ interface User {
 interface UserStore {
     user: User | null;
     loading: boolean;
-    error: string;
+    error: string  | null;
     fetchUser: (id: number) => Promise<void>;
     loadUserFromLocalStorage: () => void;
 }
@@ -17,9 +17,9 @@ interface UserStore {
 export const userDetails = create<UserStore>((set) => ({
     user: null,
     loading: false,
-    error: '',
+    error: null,
     fetchUser: async (id: number) => {
-        set({ loading: true, error: '' });
+        set({ loading: true, error: null });
         try {
             const response = await fetch(`https://jsonplaceholder.typicode.com/users/${id}`);
             if (!response.ok) {
@@ -33,7 +33,6 @@ export const userDetails = create<UserStore>((set) => ({
         }
     },
     loadUserFromLocalStorage: () => {
-        set({ loading: true, error: '' });
         const savedUser = localStorage.getItem('user');
         if (savedUser) {
             set({ user: JSON.parse(savedUser), loading: false });

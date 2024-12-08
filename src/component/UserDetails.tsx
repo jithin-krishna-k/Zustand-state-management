@@ -6,6 +6,8 @@ const UserDetails = () => {
     const { user, loading, error, fetchUser, loadUserFromLocalStorage } = userDetails();
     const [userId, setUserId] = useState<string>('');
 
+    console.log({user})
+
     useEffect(() => {
         loadUserFromLocalStorage();
     }, [loadUserFromLocalStorage]);
@@ -42,7 +44,7 @@ const UserDetails = () => {
                     Fetch User
                 </button>
             </div>
-            {loading && <p className="mt-1 text-blue-500">Loading...</p>}
+            {loading &&  <p className="mt-1 text-blue-500">Loading...</p>}
             {error && <p className="text-red-500 mt-1">{error}</p>}
             {user && !loading && !error && (
                 <div className=" p-6 mt-4 rounded">
